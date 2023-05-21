@@ -60,7 +60,7 @@ It can be changed by searching for `key = <your key>`. at starting of train.py, 
 
 
 ### 2) Using the dl-rnn.ipynb
-Here open the dl-rnn.ipynb file on colab or kaggle (kaggle preferred as initi is done for kaggle). Then at starting itself, paste the wandb key, by looking for `KEY = ` statement after imports. Every code will have a Label telling what that code is supposed to do. like `ALL NECESSARY IMPORTS` specifying all the neccessary imports are being done in the following code. The different sections (Labels and their corresponding codes) are as follows : 
+Here open the dl-rnn.ipynb file on colab or kaggle (kaggle preferred as initi is done for kaggle). Then upload the `aksharntar` dataset (also provide correct path to the preprocesing part) and also upload `AnjaliOldLipi-Regular.ttf` so as to visualise heatmaps of attention weights in malayalam (Both have been provided in the repository => both path should be clearly mentioned whenever asked). Then at starting itself, paste the wandb key, by looking for `KEY = ` statement after imports. Every code will have a Label telling what that code is supposed to do. like `ALL NECESSARY IMPORTS` label specifying all the neccessary imports are being done in the following code. The different sections (Labels and their corresponding codes) are as follows : 
 
 
 `PREPROCESSING STEP` It contains all the preprocessing steps, like creating english-index dictionaries, malayalam-index dictionaries, then loading data, converting each character into index format to correct sequence length, specifying batch sizes for data. So if you wish to change batch size, add different dataset you have to do it here.
