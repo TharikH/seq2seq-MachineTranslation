@@ -44,9 +44,9 @@ X_test,y_test = loadData(PATH = "aksharantar_sampled/mal/mal_test.csv")
 
 # Create dataset to pass to dataloader
 
-train_dataset = MakeDataset(X_train[:100],y_train[:100])
-val_dataset = MakeDataset(X_val[:100], y_val[:100])
-test_dataset = MakeDataset(X_test[:100], y_test[:100])
+train_dataset = MakeDataset(X_train,y_train)
+val_dataset = MakeDataset(X_val, y_val)
+test_dataset = MakeDataset(X_test, y_test)
 
 
 # Create dataloader so getting data in epochs is easy

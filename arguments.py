@@ -18,21 +18,21 @@ def parsArg():
     parser.add_argument('-ndl','--num_decoder_layers',default=2, type=int,
                         help='Number of hidden layers used in decoder')
     parser.add_argument('-eh','--encoder_hidden_size',default=256, type=int,
-                        help='Number of hidden neurons')
+                        help='Number of hidden neurons in encoder')
     parser.add_argument('-dh','--decoder_hidden_size',default=256, type=int,
-                        help='Number of hidden neurons')
+                        help='Number of hidden neurons in decoder')
     parser.add_argument('-bd','--bidirectional',default=True, type=bool,
                         help='Need bidirection or not')
     parser.add_argument('-ee','--encoder_embedding',default=256, type=int,
                         help='Dimension for input embedding')
     parser.add_argument('-de','--decoder_embedding',default=256, type=int,
-                        help='Dimension for input embedding')
+                        help='Dimension for output embedding')
     parser.add_argument('-d','--dropout',default=0.2, type=float,
                         help='percentage of dropout needed')
     parser.add_argument('-c','--cell_type',default='lstm', choices = ["lstm","rnn","gru"],
-                        help='Need bidirection or not')
+                        help='Which cell type to execute')
     parser.add_argument('-bw','--beam_width',default=1, type=int,
-                        help='Need bidirection or not')
+                        help='beam search beam width')
     parser.add_argument('-a','--use_attention',default=False, type=bool,
                         help='Need Attention or not')
     
